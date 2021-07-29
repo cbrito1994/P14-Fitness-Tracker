@@ -18,3 +18,17 @@ router.get('/api/workout', (req, res) => {
         res.json(err)
     })
 })
+
+router.get('/api/workout/range', (req, res) => {
+    Workout.aggregate([{
+        $addSum: {
+            totalDuration: {
+                $sum: '$exercises.duration'
+            }
+        }
+    }]).limit(7).then(response => {
+        res.json(response)
+    }).catch(err => {
+        res.json(err)
+    })
+})
