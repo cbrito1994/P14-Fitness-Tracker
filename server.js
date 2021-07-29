@@ -11,3 +11,10 @@ app.use(express.json());
 app.use(morgan("dev"));
 
 app.use(express.static("public"));
+
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutracker", {
+  useNewUrlParser: true,
+  useFindAndModify: false,
+  useCreateIndex:true,
+  useUnifiedTopology: true
+});
