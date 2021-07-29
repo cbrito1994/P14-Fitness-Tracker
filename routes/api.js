@@ -32,3 +32,12 @@ router.get('/api/workout/range', (req, res) => {
         res.json(err)
     })
 })
+
+router.put('/api/workout/:id', (req, res) => {
+    const id = req.params.id;
+    Workout.findByIdAndUpdate(id).then(response => {
+        res.json(response)
+    }).catch(err => {
+        res.json(err)
+    })
+})
