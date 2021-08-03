@@ -16,3 +16,4 @@ In the landing page, you can go to the button of new exercise and choose what ki
 In the dashboard page, you can see in 2 distintics graphs the progress you've had in the past weeks and with every new exercise you upload, the graphs will change.
 
 ## Link to the App
+https://workout-fitness-tracker-bc.herokuapp.com/
