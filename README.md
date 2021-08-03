@@ -4,7 +4,9 @@
 This app is able to keep track of your workout and show you your process along the weeks with graphs. You can add different kinds of workout exercises and the details of each one.
 
 ## Screenshot
-
+![alt text](./assets/workoutDashboard.PNG)
+![alt text](./assets/workoutExercise.PNG)
+![alt text](./assets/workoutMain.PNG)
 
 ## Using the Fitness Tracker
 ### Adding a new exercise
