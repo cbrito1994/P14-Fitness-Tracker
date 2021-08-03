@@ -10,14 +10,14 @@ app.use(express.json());
 app.use(morgan("dev"));
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitnesstracker", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
   useNewUrlParser: true,
   useFindAndModify: false,
   useCreateIndex:true,
   useUnifiedTopology: true
 });
 
-app.use(require("./routes/paths"));
-app.use(require("./routes/api"));
+app.use(require("./routes/paths.js"));
+app.use(require("./routes/api.js"));
 
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
